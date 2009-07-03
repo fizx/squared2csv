@@ -7,7 +7,7 @@
 #
 require 'rubygems'
 require 'sinatra'
-require File.dirname(__FILE__) + "doc2csv"
+require File.dirname(__FILE__) + "/doc2csv"
 
 # Quick test
 get '/' do
