@@ -15,7 +15,7 @@ get '/' do
 end
 
 post '/convert' do
-  doc = Nokogirl::HTML(params[:html])
+  doc = Nokogiri::HTML(params[:html])
   headers "Content-Disposition" => "attachment;filename=squared.csv",
           "Content-Type" => "application/octet-stream"
   doc2csv doc
